@@ -9,6 +9,8 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
+gem 'faraday', '1.4.2'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
