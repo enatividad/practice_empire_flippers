@@ -12,6 +12,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'faraday', '1.4.2'
 gem 'sidekiq', '~> 6.2', '>= 6.2.1'
+gem 'sidekiq-scheduler', '~> 3.1'
 
 group :development, :test do
   gem 'pry-rails'
