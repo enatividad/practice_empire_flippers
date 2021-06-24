@@ -1,0 +1,3 @@
+:schedule:
+  ListingWorkers::ScrapeFromEmpireFlippersApiAndCreateDealsForHubspotCrmObjectsApiWorker:
+    cron: '0 0 0 * * *'
