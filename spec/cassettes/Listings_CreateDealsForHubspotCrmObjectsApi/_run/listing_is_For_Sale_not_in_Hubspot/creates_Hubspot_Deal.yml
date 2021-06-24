@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/crm/v3/objects/deals/batch/create?hapikey=d7a99c31-0c9c-4fef-882c-6ac743d72b74
+    body:
+      encoding: UTF-8
+      string: '{"inputs":[{"properties":{"dealname":"Listing 1","amount":"1.0","closedate":"2038-01-01T00:00:00.000Z","description":"1"}}]}'
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      date:
+      - Thu, 24 Jun 2021 14:09:20 GMT
+      content-type:
+      - application/json;charset=utf-8
+      content-length:
+      - '337'
+      connection:
+      - keep-alive
+      cf-ray:
+      - 664688847f5c568f-SIN
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Accept-Encoding
+      cf-cache-status:
+      - DYNAMIC
+      access-control-allow-credentials:
+      - 'false'
+      cf-request-id:
+      - 0adff3a6ca0000568f66099000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      x-hubspot-correlation-id:
+      - 1893fc45-020b-482c-81a4-b17774c5b02a
+      x-hubspot-ratelimit-daily:
+      - '500000'
+      x-hubspot-ratelimit-daily-remaining:
+      - '499984'
+      x-hubspot-ratelimit-interval-milliseconds:
+      - '10000'
+      x-hubspot-ratelimit-max:
+      - '150'
+      x-hubspot-ratelimit-remaining:
+      - '149'
+      x-hubspot-ratelimit-secondly:
+      - '15'
+      x-hubspot-ratelimit-secondly-remaining:
+      - '14'
+      x-trace:
+      - 2BEE4C6C1C71B42A4316DE333DD2D420F1D0E8ACEB000000000000000000
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=fu4HusT0Uftbf%2BiITZpSJe2Z80LHEkAuLF1VAR5N85MjTIx96S0TESPJbvIGjvWjVlf4pxlv0hF%2FFjFcgpzS%2FQdW9ctcCl5M2EK%2FQd1Kc6YHTrXsjalkdKBxtQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      alt-svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"COMPLETE","results":[{"id":"5524146750","properties":{"amount":"1.0","amount_in_home_currency":"1.0","closedate":"2038-01-01T00:00:00Z","createdate":"2021-06-24T14:09:20.254Z","days_to_close":"6034","dealname":"Listing
+        1","description":"1","hs_closed_amount":"0","hs_closed_amount_in_home_currency":"0","hs_createdate":"2021-06-24T14:09:20.254Z","hs_deal_stage_probability_shadow":"0","hs_forecast_amount":"1.0","hs_is_closed_won":"false","hs_lastmodifieddate":"2021-06-24T14:09:20.254Z","hs_object_id":"5524146750","hs_projected_amount":"0","hs_projected_amount_in_home_currency":"0"},"createdAt":"2021-06-24T14:09:20.254Z","updatedAt":"2021-06-24T14:09:20.254Z","archived":false}],"startedAt":"2021-06-24T14:09:20.234Z","completedAt":"2021-06-24T14:09:20.352Z"}'
+  recorded_at: Thu, 24 Jun 2021 14:09:20 GMT
+recorded_with: VCR 6.0.0
