@@ -34,6 +34,8 @@ This app is currently deployed in Heroku. There are no visitable urls.
   development env will work properly
   - you need to set `secret_key_base`
   - you need to set `hubspot[:hapikey]`
+- run `bin/rails credentials:edit --environment test` with the same
+  considerations as well
 - run `bin/rspec` to execute the test suite
 
 ## Production Environment Setup

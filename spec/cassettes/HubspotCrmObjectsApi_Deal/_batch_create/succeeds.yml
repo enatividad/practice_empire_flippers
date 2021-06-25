@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.hubapi.com/crm/v3/objects/deals/batch/create?hapikey=d7a99c31-0c9c-4fef-882c-6ac743d72b74
+    uri: https://api.hubapi.com/crm/v3/objects/deals/batch/create?hapikey=<HUBSPOT_API_KEY>
     body:
       encoding: UTF-8
       string: '{"inputs":[{"properties":{"dealname":"dealname: 3","amount":"321.0","closedate":"2038-01-04T00:00:00.000Z","description":"description:
@@ -20,15 +20,15 @@ http_interactions:
       message: Created
     headers:
       date:
-      - Thu, 24 Jun 2021 12:30:41 GMT
+      - Fri, 25 Jun 2021 00:55:45 GMT
       content-type:
       - application/json;charset=utf-8
       content-length:
-      - '413'
+      - '407'
       connection:
       - keep-alive
       cf-ray:
-      - 6645f802cc65172c-SIN
+      - 664a3b6d9f461a05-SIN
       strict-transport-security:
       - max-age=31536000; includeSubDomains; preload
       vary:
@@ -38,15 +38,15 @@ http_interactions:
       access-control-allow-credentials:
       - 'false'
       cf-request-id:
-      - 0adf9955b90000172c2717a000000001
+      - 0ae243787e00001a055b98b000000001
       expect-ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       x-hubspot-correlation-id:
-      - 4d062125-a43e-47be-b903-5f122796f59f
+      - 4c824f61-6c4a-4e4a-8804-676842ed0a50
       x-hubspot-ratelimit-daily:
       - '500000'
       x-hubspot-ratelimit-daily-remaining:
-      - '499991'
+      - '499959'
       x-hubspot-ratelimit-interval-milliseconds:
       - '10000'
       x-hubspot-ratelimit-max:
@@ -58,9 +58,9 @@ http_interactions:
       x-hubspot-ratelimit-secondly-remaining:
       - '14'
       x-trace:
-      - 2BFAB382E2CDFA2E173E68161E8DB6CB14247300A7000000000000000000
+      - 2B3855A4540E3AD35BA5BD98D1D267565734338DFF000000000000000000
       report-to:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=BjqPVFcyO78FJHOLCGKC%2FSBVqCLS1jaJZdaiweSTKgprjPHQoiLfxh5DRCgZN%2BKh3Q%2FTSQVWs%2FX9AUx9Mah4F1MRp3U91Uqc3oE1AnR8zPRO6XOpVccs4rdtKQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=%2FrGFz7XDKeN9%2B3uOwtFIuSXTJCbCB%2BywrPSxZhSsu9SSw%2F7LUttQvfdjpEizPRuZQSCp1FUJr4T0zcgTjQOcWtanH3Zys%2BOdCN96DZ9P37DwS2ylp4TsgCtQgw%3D%3D"}],"group":"cf-nel","max_age":604800}'
       nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       server:
@@ -70,9 +70,9 @@ http_interactions:
         ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"COMPLETE","results":[{"id":"5524506223","properties":{"amount":"321.0","amount_in_home_currency":"321.0","closedate":"2038-01-04T00:00:00Z","createdate":"2021-06-24T12:30:41.313Z","days_to_close":"6037","dealname":"dealname:
-        3","description":"description: 3","hs_closed_amount":"0","hs_closed_amount_in_home_currency":"0","hs_createdate":"2021-06-24T12:30:41.313Z","hs_deal_stage_probability_shadow":"0","hs_forecast_amount":"321.0","hs_is_closed_won":"false","hs_lastmodifieddate":"2021-06-24T12:30:41.313Z","hs_object_id":"5524506223","hs_projected_amount":"0","hs_projected_amount_in_home_currency":"0"},"createdAt":"2021-06-24T12:30:41.313Z","updatedAt":"2021-06-24T12:30:41.313Z","archived":false},{"id":"5524506225","properties":{"amount":"54321.0","amount_in_home_currency":"54321.0","closedate":"2038-01-06T00:00:00Z","createdate":"2021-06-24T12:30:41.313Z","days_to_close":"6039","dealname":"dealname:
-        5","description":"description: 5","hs_closed_amount":"0","hs_closed_amount_in_home_currency":"0","hs_createdate":"2021-06-24T12:30:41.313Z","hs_deal_stage_probability_shadow":"0","hs_forecast_amount":"54321.0","hs_is_closed_won":"false","hs_lastmodifieddate":"2021-06-24T12:30:41.313Z","hs_object_id":"5524506225","hs_projected_amount":"0","hs_projected_amount_in_home_currency":"0"},"createdAt":"2021-06-24T12:30:41.313Z","updatedAt":"2021-06-24T12:30:41.313Z","archived":false},{"id":"5524506224","properties":{"amount":"4321.0","amount_in_home_currency":"4321.0","closedate":"2038-01-05T00:00:00Z","createdate":"2021-06-24T12:30:41.313Z","days_to_close":"6038","dealname":"dealname:
-        4","description":"description: 4","hs_closed_amount":"0","hs_closed_amount_in_home_currency":"0","hs_createdate":"2021-06-24T12:30:41.313Z","hs_deal_stage_probability_shadow":"0","hs_forecast_amount":"4321.0","hs_is_closed_won":"false","hs_lastmodifieddate":"2021-06-24T12:30:41.313Z","hs_object_id":"5524506224","hs_projected_amount":"0","hs_projected_amount_in_home_currency":"0"},"createdAt":"2021-06-24T12:30:41.313Z","updatedAt":"2021-06-24T12:30:41.313Z","archived":false}],"startedAt":"2021-06-24T12:30:41.291Z","completedAt":"2021-06-24T12:30:41.450Z"}'
-  recorded_at: Thu, 24 Jun 2021 12:30:41 GMT
+      string: '{"status":"COMPLETE","results":[{"id":"5530246676","properties":{"amount":"54321.0","amount_in_home_currency":"54321.0","closedate":"2038-01-06T00:00:00Z","createdate":"2021-06-25T00:55:45.726Z","days_to_close":"6038","dealname":"dealname:
+        5","description":"description: 5","hs_closed_amount":"0","hs_closed_amount_in_home_currency":"0","hs_createdate":"2021-06-25T00:55:45.726Z","hs_deal_stage_probability_shadow":"0","hs_forecast_amount":"54321.0","hs_is_closed_won":"false","hs_lastmodifieddate":"2021-06-25T00:55:45.726Z","hs_object_id":"5530246676","hs_projected_amount":"0","hs_projected_amount_in_home_currency":"0"},"createdAt":"2021-06-25T00:55:45.726Z","updatedAt":"2021-06-25T00:55:45.726Z","archived":false},{"id":"5530246675","properties":{"amount":"321.0","amount_in_home_currency":"321.0","closedate":"2038-01-04T00:00:00Z","createdate":"2021-06-25T00:55:45.726Z","days_to_close":"6036","dealname":"dealname:
+        3","description":"description: 3","hs_closed_amount":"0","hs_closed_amount_in_home_currency":"0","hs_createdate":"2021-06-25T00:55:45.726Z","hs_deal_stage_probability_shadow":"0","hs_forecast_amount":"321.0","hs_is_closed_won":"false","hs_lastmodifieddate":"2021-06-25T00:55:45.726Z","hs_object_id":"5530246675","hs_projected_amount":"0","hs_projected_amount_in_home_currency":"0"},"createdAt":"2021-06-25T00:55:45.726Z","updatedAt":"2021-06-25T00:55:45.726Z","archived":false},{"id":"5530246674","properties":{"amount":"4321.0","amount_in_home_currency":"4321.0","closedate":"2038-01-05T00:00:00Z","createdate":"2021-06-25T00:55:45.726Z","days_to_close":"6037","dealname":"dealname:
+        4","description":"description: 4","hs_closed_amount":"0","hs_closed_amount_in_home_currency":"0","hs_createdate":"2021-06-25T00:55:45.726Z","hs_deal_stage_probability_shadow":"0","hs_forecast_amount":"4321.0","hs_is_closed_won":"false","hs_lastmodifieddate":"2021-06-25T00:55:45.726Z","hs_object_id":"5530246674","hs_projected_amount":"0","hs_projected_amount_in_home_currency":"0"},"createdAt":"2021-06-25T00:55:45.726Z","updatedAt":"2021-06-25T00:55:45.726Z","archived":false}],"startedAt":"2021-06-25T00:55:45.705Z","completedAt":"2021-06-25T00:55:45.808Z"}'
+  recorded_at: Fri, 25 Jun 2021 00:55:45 GMT
 recorded_with: VCR 6.0.0
